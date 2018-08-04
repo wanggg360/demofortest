@@ -12,8 +12,9 @@
 	<properties>
 		<spring.version>4.3.18.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
+		<testng.version>6.14.3</testng.version>
 		<mybatis.version></mybatis.version>
-
+		<servlet.version>4.0.1</servlet.version>
 	</properties>
 	<dependencies>
 		<!-- spring core lib -->
@@ -28,11 +29,17 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+        </dependency>
 		
 		<!-- mysql lib -->
 		<dependency>
@@ -40,14 +47,35 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<version>8.0.12</version>
 		</dependency>
+		
+		<!-- serverlet lib -->
+		<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
 
-		<!-- junit lib -->
+		<!-- test lib -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>${testng.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.version}</version>
+            <scope>test</scope>
+        </dependency>
 
 		<!-- log lib -->
 		<dependency>
