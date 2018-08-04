@@ -16,7 +16,6 @@
 
 	</properties>
 	<dependencies>
-
 		<!-- spring core lib -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -34,6 +33,14 @@
 			<artifactId>spring-context</artifactId>
 			<version>${spring.version}</version>
 		</dependency>
+		
+		<!-- mysql lib -->
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.12</version>
+		</dependency>
+
 		<!-- junit lib -->
 		<dependency>
 			<groupId>junit</groupId>
