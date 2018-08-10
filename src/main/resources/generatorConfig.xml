@@ -2,7 +2,7 @@
 <!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
 <generatorConfiguration>
 	<properties resource="jdbc.properties" />
-	
+	<classPathEntry location="D:\mysql-connector-java-5.1.46.jar" />
 	<context id="mysqlTables" targetRuntime="MyBatis3"
 		defaultModelType="flat">
 		<!-- 生成的Java文件的编码 -->
@@ -57,7 +57,9 @@
 			<generatedKey column="user_id" sqlStatement="MySql"
 				identity="false" />
 		</table>
-		<table tableName="t_login_log" domainObjectName="LoginLog">
+		<table tableName="t_login_log" domainObjectName="LoginLog" enableCountByExample="false" enableUpdateByExample="false"
+			enableDeleteByExample="false" enableSelectByExample="false"
+			selectByExampleQueryId="false">
 			<generatedKey column="login_log_id" sqlStatement="MySql"
 				identity="false" />
 		</table>
