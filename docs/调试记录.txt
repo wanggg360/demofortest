@@ -1,0 +1,4 @@
+第一步：调试spring整合mybatis，并执行testng测试UserService正常读取数据库
+问题1：缺少spring包，在整合mybatis是额外需要mybatis-spring包；spring执行testng的时候需要spring-test的包
+问题2：mybatis的mapper文件中有多中方式传递多个参数A.使用map  B.使用注解 param C.使用javaBean（参数定义成一个bean）；mapper文件中的返回值resultType或者resultMap
+问题3：org.mybatis.spring.mapper.MapperScannerConfigurer中的sqlfactory之前使用sqlSessionFactory是无法读到外置的jdbc参数文件，换成sqlSessionFactoryBeanName可以
